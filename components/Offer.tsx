@@ -35,7 +35,7 @@ const CardHeader = ({
           {features.split(",").map((feature, index) => (
             <div key={index} className="flex items-center gap-3">
               <Cog className="w-5 h-5 text-blue-500" />
-              <span className="md:text-[white]">{feature.trim()}</span>
+              <span className="text-white">{feature.trim()}</span>
             </div>
           ))}
         </div>
