@@ -12,13 +12,13 @@ import {
 export const EmailTemplate = () => {
   // Use PNG/JPEG logo, not SVG
   const fallbackLogo =
-    "https://vaame.s3.eu-north-1.amazonaws.com/vaame.svg"; // <-- replace with your PNG/JPEG
+    "https://waitlist.vaame.tech/vaame.png"; // <-- use PNG/JPEG here
   const siteLogo = process.env.NEXT_PUBLIC_LOGO || fallbackLogo;
 
   return (
     <Html>
       <Head />
-      <Preview>{`You’re on the waitlist for ${process.env.NEXT_PUBLIC_SITE_NAME}`}</Preview>
+      {/* <Preview>{`You’re on the waitlist for ${process.env.NEXT_PUBLIC_SITE_NAME}`}</Preview> */}
       <Body style={main}>
         <Container style={container}>
           <Section>
@@ -27,7 +27,7 @@ export const EmailTemplate = () => {
             </Text>
             <Img
               style={img}
-              src={siteLogo}
+              src={siteLogo} // <-- use siteLogo variable
               width="100"
               height="100"
               alt="Logo"
@@ -79,7 +79,7 @@ const img = {
   display: "block",
   margin: "0 auto 24px auto",
   borderRadius: "50%",
-  background: "#fff",
+  background: "rgba(0,0,0,0.04)",
   boxShadow: "0 2px 8px rgba(0,0,0,0.04)",
   padding: "12px",
 };
