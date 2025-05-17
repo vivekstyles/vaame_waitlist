@@ -5,7 +5,7 @@ import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const siteName = process.env.NEXT_PUBLIC_SITE_NAME ?? "Quick Waitlist";
+const siteName = process.env.NEXT_PUBLIC_SITE_NAME ?? "Vaame Waitlist";
 const siteDescription =
   process.env.NEXT_PUBLIC_SITE_DESCRIPTION ??
   "Quick Waitlist and coming soon page for your SAAS and website.";
@@ -22,7 +22,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-gradient-to-b from-[#fff6df]  to-[#FEFBF0]`}>
+      <head>
+        <link rel="icon" href="/vaame.svg" type="image/svg+xml" />
+      </head>
+      <body className={`${inter.className} bg-gradient-to-b from-[#0E0C15]  to-[#0E0C15]`}>
         <main className="flex justify-center items-center min-h-screen">{children}</main>
         <Toaster />
       </body>

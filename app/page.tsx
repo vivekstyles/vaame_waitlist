@@ -5,17 +5,17 @@ import EmailForm from "@/components/EmailForm";
 export default function Home() {
   const siteLogo =
     process.env.NEXT_PUBLIC_LOGO ||
-    "https://res.cloudinary.com/dyv1yduua/image/upload/v1733392810/speaker_oiuezn.svg";
+    "vaame.svg";
   // Data from env
   const features =
     process.env.NEXT_PUBLIC_FEATURES ||
-    "Sectoral templates, Sectoral templates, Sectoral templates";
-  const price = process.env.NEXT_PUBLIC_CURRENT_PRICE || "";
-  const discountPrice = process.env.NEXT_PUBLIC_DISCOUNT_PRICE || "";
-  const date = process.env.NEXT_PUBLIC_LAUNCH_DATE || "2026-01-01";
+    "Send up to 3000 requests per month, Support large database schemas (400+ tables), Handle complex table relationships, Develop advanced analysis tools";
+  const price = process.env.NEXT_PUBLIC_CURRENT_PRICE || "7";
+  const discountPrice = process.env.NEXT_PUBLIC_DISCOUNT_PRICE || "14";
+  const date = process.env.NEXT_PUBLIC_LAUNCH_DATE || "2025-09-01";
   const title =
     process.env.NEXT_PUBLIC_TITLE ||
-    "Join the waitlist for the SAAS code library.";
+    "Join the waitlist for Vaame SQL generation assistant.";
   const description =
     process.env.NEXT_PUBLIC_OFFER_TITLE || "Add offer title from env";
 
@@ -26,10 +26,10 @@ export default function Home() {
       <img
         src={siteLogo}
         alt="logo"
-        className="w-auto h-25 mx-auto object-contain mb-5"
+        className="w-auto h-16 mx-auto object-contain mb-5"
       />
       <Card>
-        <div className="grid md:grid-cols-2 md:divide-x divide-[#F0E4D2]">
+        <div className="grid md:grid-cols-2 md:divide-x divide-[#FE4D2]">
           <div className="md:order-1 order-2">
             <CardHeader
               title={description}

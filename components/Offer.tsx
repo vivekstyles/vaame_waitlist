@@ -17,11 +17,11 @@ const CardHeader = ({
       <div className="space-y-6 pb-5">
         <div className="space-y-2">
           {price && discount && (
-            <div className="text-orange-500 font-medium">
+            <div className="text-blue-500 font-medium">
               Limited Time Offer
             </div>
           )}
-          <h2 className="md:text-2xl text-xl font-semibold">{title}</h2>
+          <h2 className="md:text-2xl text-xl font-semibold text-[white]">{title}</h2>
         </div>
 
         {price && discount && (
@@ -34,8 +34,8 @@ const CardHeader = ({
         <div className="space-y-3">
           {features.split(",").map((feature, index) => (
             <div key={index} className="flex items-center gap-3">
-              <Cog className="w-5 h-5 text-orange-500" />
-              <span>{feature.trim()}</span>
+              <Cog className="w-5 h-5 text-blue-500" />
+              <span className="md:text-[white]">{feature.trim()}</span>
             </div>
           ))}
         </div>

@@ -71,14 +71,14 @@ const EmailForm = ({ date, title }: { date: string; title: string }) => {
           <Hourglass size={14} strokeWidth={2} aria-hidden="true" />
           {getDaysLeft()} days left
         </span>
-        <h1 className="md:text-4xl text-3xl leading-tight font-semibold">
+        <h1 className="md:text-4xl text-3xl leading-tight font-semibold bg-gradient-to-r from-[#3CA2FD] to-[#EF6DF1] bg-clip-text text-transparent">
           {title}
         </h1>
       </div>
 
       <form onSubmit={(e) => handleSubmit(e)} className="space-y-5">
         <div>
-          <Label htmlFor="input-10">Full Name</Label>
+          <Label htmlFor="input-10" className="md:text-[white]">Full Name</Label>
           <div className="relative">
             <Input
               type="text"
@@ -93,7 +93,7 @@ const EmailForm = ({ date, title }: { date: string; title: string }) => {
           </div>
         </div>
         <div>
-          <Label htmlFor="input-10">Email address</Label>
+          <Label htmlFor="input-10" className="md:text-[white]">Email address</Label>
           <div className="relative">
             <Input
               type="email"
