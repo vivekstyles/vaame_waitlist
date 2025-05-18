@@ -9,13 +9,13 @@ export default function Home() {
   // Data from env
   const features =
     process.env.NEXT_PUBLIC_FEATURES ||
-    "Send up to 3000 requests per month, Support large database schemas (400+ tables), Handle complex table relationships, Develop advanced analysis tools";
+    "Run up to 3000 AI-powered queries each month, Query large spreadsheets or databases with 400+ tables, Understand and join related data - automaticallys, Build smart dashboards and visuals with zero code";
   const price = process.env.NEXT_PUBLIC_CURRENT_PRICE || "7";
   const discountPrice = process.env.NEXT_PUBLIC_DISCOUNT_PRICE || "14";
   const date = process.env.NEXT_PUBLIC_LAUNCH_DATE || "2025-09-01";
   const title =
     process.env.NEXT_PUBLIC_TITLE ||
-    "Join the waitlist for Vaame SQL generation assistant.";
+    "Join the waitlist to unlock early access to Vaame — your all-in-one AI tool for text-to-SQL, effortless visualizations, and instant data analysis from Excel or CSV.";
   const description =
     process.env.NEXT_PUBLIC_OFFER_TITLE || "Add offer title from env";
 
